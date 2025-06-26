@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMinder Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white  bg-dark" style="width: 300px;">
+      <a href="/" class="d-flex align-items-center mb-3 text-white text-decoration-none">
+        <i class="fa-solid fa-leaf text-white"></i> &nbsp;
+        <span class="fs-4">TaskMinder</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item"><a href="#" class="nav-link active"><i class="fa-solid fa-house-user"></i>&nbsp;Dashboard</a></li>
+        <li><a href="#" class="nav-link text-white"><i class="fa-solid fa-chart-column"></i>&nbsp;Projects</a></li>
+        <li><a href="#" class="nav-link text-white"><i class="fa-solid fa-user"></i>&nbsp;Clients</a></li>
+        <li><a href="#" class="nav-link text-white"><i class="fa-solid fa-chart-simple"></i>&nbsp;Analytics</a></li>
+        <li><a href="#" class="nav-link text-white"><i class="fa-solid fa-calendar-days"></i>&nbsp;Calendar</a></li>
+        <li><a href="#" class="nav-link text-white"><i class="fa-solid fa-message"></i>&nbsp;Message</a></li>
+        <li><a href="#" class="nav-link text-white"><i class="fa-solid fa-circle-info"></i>&nbsp;Reports</a></li>
+        <li><a href="#" class="nav-link text-white"><i class="fa-solid fa-gear"></i>&nbsp;Settings</a></li>
+      </ul>
+      <div class="card text-center mt-auto">
+        <div class="card-body">
+          <p class="card-text">Free promotions of <br> your first resume</p>
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 py-2">
+        <div class="container-fluid">
+          <div>
+            <h5>Hello, Megko</h5>
+            <p class="mb-0">Let's organize your daily tasks</p>
+          </div>
+          <div class="d-flex align-items-center ms-auto gap-3">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search">
+            </form>
+            <i class="fa-solid fa-bell fs-5"></i>
+            <img src="user.jpeg" alt="User" width="40" height="40" style="border-radius: 50%;">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <div>
+                  <h6 class="mb-0">Mohammed shajith</h6>
+                  <small>User</small>
+                </div>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Progress Cards -->
+      <div class="d-flex flex-wrap gap-4 p-4">
+        <!-- Card 1 -->
+        <div class="card" style="width: 16rem;">
+          <div class="card-body">
+            <h5 class="card-title">Design few mobile screens</h5>
+            <p>Dropbox mobile app</p>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex gap-2"><i class="fa-solid fa-ellipsis-vertical"></i><h6>Progress</h6></div>
+              <p>8/10</p>
+            </div>
+            <div class="d-flex">
+              <div class="progress-line bg-danger w-75"></div>
+              <div class="progress-line bg-light" style="width: 40px;"></div>
+            </div>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="btn btn-primary btn-sm">26 AUG 2023</a>
+              <i class="fa-solid fa-message"></i><p class="mb-0">4</p>
+              <i class="fa-solid fa-link"></i><p class="mb-0">5</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" style="width: 16rem;">
+          <div class="card-body">
+            <h5 class="card-title">Create wireframe for ios app</h5>
+            <p>Oreo ios app project</p>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex gap-2"><i class="fa-solid fa-ellipsis-vertical"></i><h6>Progress</h6></div>
+              <p>7/10</p>
+            </div>
+            <div class="d-flex">
+              <div class="progress-line bg-primary w-75"></div>
+              <div class="progress-line bg-light" style="width: 40px;"></div>
+            </div>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="btn btn-primary btn-sm">14 NOV 2023</a>
+              <i class="fa-solid fa-message"></i><p class="mb-0">4</p>
+              <i class="fa-solid fa-link"></i><p class="mb-0">5</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" style="width: 16rem;">
+          <div class="card-body">
+            <h5 class="card-title">Make twitter banner</h5>
+            <p>Twitter marketing</p>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex gap-2"><i class="fa-solid fa-ellipsis-vertical"></i><h6>Progress</h6></div>
+              <p>9/10</p>
+            </div>
+            <div class="d-flex">
+              <div class="progress-line bg-warning w-75"></div>
+              <div class="progress-line bg-light" style="width: 40px;"></div>
+            </div>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="btn btn-primary btn-sm">08 JUN 2023</a>
+              <i class="fa-solid fa-message"></i><p class="mb-0">4</p>
+              <i class="fa-solid fa-link"></i><p class="mb-0">5</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" style="width: 16rem;">
+          <div class="card-body">
+            <h5 class="card-title">Add more UI/UX mockups</h5>
+            <p>Pinterest promotion</p>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex gap-2"><i class="fa-solid fa-ellipsis-vertical"></i><h6>Progress</h6></div>
+              <p>8/10</p>
+            </div>
+            <div class="d-flex">
+              <div class="progress-line bg-dark w-75"></div>
+              <div class="progress-line bg-light" style="width: 40px;"></div>
+            </div>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="btn btn-primary btn-sm">26 AUG 2023</a>
+              <i class="fa-solid fa-message"></i><p class="mb-0">4</p>
+              <i class="fa-solid fa-link"></i><p class="mb-0">5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Grid Cards and Side Panel -->
+      <div class="flex-body">
+        <div class="grid-card">
+          <div><h5>Working(03)</h5></div>
+          <div><h5>In Progress(03)</h5></div>
+
+          <!-- Grid Cards -->
+          <!-- Repeat for each card -->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Stack</h5>
+              <p class="card-text">Some quick example text...</p>
+              <a href="#" class="btn btn-outline-primary">IOS APP</a>
+              <a href="#" class="btn btn-outline-warning">ANDROID</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Twitter</h5>
+              <p class="card-text">Some quick example text...</p>
+              <a href="#" class="btn btn-outline-primary">WEBSITE</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Google</h5>
+              <p class="card-text">Some quick example text...</p>
+              <a href="#" class="btn btn-outline-primary">BRANDING</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Maxis Tyres</h5>
+              <p class="card-text">Some quick example text...</p>
+              <a href="#" class="btn btn-outline-primary">IOS APP</a>
+              <a href="#" class="btn btn-outline-warning">ANDROID</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Blackberry</h5>
+              <p class="card-text">Some quick example text...</p>
+              <a href="#" class="btn btn-outline-primary">IOS APP</a>
+              <a href="#" class="btn btn-outline-warning">ANDROID</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Samsung</h5>
+              <p class="card-text">Some quick example text...</p>
+              <a href="#" class="btn btn-outline-primary">IOT</a>
+              <a href="#" class="btn btn-outline-warning">AR</a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Right side panel -->
+          <div class="flex-right-card">
+            <div class="card" style="width: 21rem;">
+              <div class="title-btn d-flex justify-content-between align-items-center p-3">
+                <h5 class="card-title mb-0">Task activity</h5>
+                <a href="#" class="btn btn-outline-secondary">See more</a>
+              </div>
+              <img src="task-progress.png" class="card-img-top" alt="...">
+              <div class="d-flex gap-2 p-2 justify-content-center">
+                <div class="bluecircle"></div><h6>Progress</h6>
+                <div class="yellowcircle"></div><h6>TO-DO</h6>
+                <div class="lightbluecircle"></div><h6>Completed</h6>
+              </div>
+            </div>
+
+            <div class="card" style="width: 22rem;">
+              <div class="card-body">
+                <h5 class="card-title">Member comments</h5>
+                <p class="card-text">Today <strong style="color: gray;font-size: 25px;">.</strong> 11 Apr 2023</p>
+
+                <div class="d-flex gap-2">
+                  <img src="user2.jpg" alt="" class="rounded-circle" style="width: 50px; height: 50px; border: 1px solid black;">
+                  <div><h6>Godwin</h6><p>Creative workman</p></div>
+                  <div style="border: 10px solid lightgreen; width: 8px; height: 8px; border-radius: 50%;"></div>
+                </div>
+                <hr>
+
+                <div class="d-flex gap-2">
+                  <img src="user3.jpeg" alt="" class="rounded-circle" style="width: 50px; height: 50px; border: 1px solid black;">
+                  <div><h6>Raji</h6><p>Well done</p></div>
+                </div>
+                <hr>
+
+                <div class="d-flex gap-2">
+                  <img src="user4.jpeg" alt="" class="rounded-circle" style="width: 50px; height: 50px; border: 1px solid black;">
+                  <div><h6>Johan</h6><p>Good job man</p></div>
+                  <div style="border: 10px solid lightgreen; width: 8px; height: 8px; border-radius: 50%;"></div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
